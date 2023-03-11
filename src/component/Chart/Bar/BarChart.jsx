@@ -14,12 +14,9 @@ import {
 import { months } from "../../../data/tempareture";
 import { temp } from "../../../data/tempareture";
 
-
-
-
 ChartJS.register(LinearScale, CategoryScale, BarElement, Tooltip, Legend);
 
-// main bar component 
+// main bar component
 const BarChart = () => {
   const data = {
     labels: months,
@@ -27,8 +24,8 @@ const BarChart = () => {
       {
         label: "Dhaka",
         data: temp[0].temps,
-        backgroundColor: ["rgba(51, 204, 51, 0.2)"],
-        borderColor: ["rgba(51, 204, 51, 1)"],
+        backgroundColor: ["rgba(0, 127, 67, 0.2)"],
+        borderColor: ["rgba(0, 127, 67, 1)"],
         borderWidth: 1,
       },
       {
@@ -53,7 +50,7 @@ const BarChart = () => {
 
   return (
     <BarContainer>
-      <ChartTitle> Tempareture in Dhaka and Darjeeling</ChartTitle>
+      <ChartTitle> Temparature in Dhaka and Darjeeling</ChartTitle>
       <Bar data={data} options={options} />
     </BarContainer>
   );

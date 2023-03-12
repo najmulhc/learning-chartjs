@@ -1,5 +1,6 @@
 import BarChart from "./component/Chart/Bar/BarChart";
 import LineChart from "./component/Chart/Line/LineChart";
+import PieChart from "./component/Chart/Pie/PieChart";
 import { MainChartContainer } from "./component/Containers/ChartContainers.styled";
 
 
@@ -10,7 +11,7 @@ const App = () => {
     <MainChartContainer>
       <BarChart />
       <LineChart />
-      <BarChart />
+      <PieChart />
       <BarChart />
     </MainChartContainer>
   );

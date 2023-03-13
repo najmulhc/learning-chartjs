@@ -33,7 +33,9 @@ const PieChart = () => {
   return (
     <BarContainer>
       <ChartTitle>Market Share of mobile Operators In bangladesh</ChartTitle>
-      <Pie data={data} />
+      <Pie data={data} options={{
+        maintainAspectRatio: false
+      }} />
     </BarContainer>
   );
 };
